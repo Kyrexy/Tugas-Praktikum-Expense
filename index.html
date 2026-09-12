@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Tracker Pengeluaran</title>
+    <linnk rel = "stylesheet" href="style.css"></linnk>
+</head>
+<body>
+    <header>
+        <h1>Tracker Pengeluaran</h1>
+    </header>
+    <div class = "form-group">
+        <input type="text" id="Expense Name" placeholder="Expense Name">
+        <input type="number" id="expense-amount" placeholder="Amount">
+        <select id="expense-category">
+            <option value=""disable selected>Pilih Kategori</option>
+            <option value="Makanan">Makanan</option>
+            <option value="Transportasi">Transportasi</option>
+            <option value="Berbelanja">Berbelanja</option>
+            <option value="Lainnya">Lainnya</option>
+        </select>
+        <input type="date" id="expense-date">
+        <button id="add-expense" disabled>Add Expense</button>
+    </div>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Pengeluaran</th>
+                    <th>Jumlah</th>
+                    <th>Kategori</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="expanse-table"></tbody>
+        </table>
+    </div>
+
+    <div class="filter-group">
+        <div>
+            <label for="filter-category">Filter lewat kategori:</label>
+            <select id="filter-category">
+                <option value="All">All</option>
+                <option value="Makanan">Makanan</option>
+                <option value="Transportasi">Transportasi</option>
+                <option value="Berbelanja">Berbelanja</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+        </div>
+        <div class="total">
+            Total : $ <span id ="Jumlah Pengeluaran">0.00</span>
+        </div>
+    </div>
+
+    <!--bagian edit-->
+        <div id="edit-modal" class="modal">
+            <div class="modal-content">
+                <h2>Edit Pengeluaran</h2>
+        <input type="text" id="Edit Expense Name" placeholder="Expense Name">
+        <input type="number" id="Edit expense-amount" placeholder="Amount">
+        <select id="Edit expense-category">
+            <option value=""disable selected>Pilih Kategori</option>
+            <option value="Makanan">Makanan</option>
+            <option value="Transportasi">Transportasi</option>
+            <option value="Berbelanja">Berbelanja</option>
+            <option value="Lainnya">Lainnya</option>
+        </select>
+        <input type="date" id="edit-expense-date">
+        <button class="confirm-btn" id="'confirm-edit">Simpan Perubahan</button>
+        <button class="cancel-btn" onclick="closeModal('edit-modal')">Cancel</button>
+            </div>
+        </div>
+
+        <!--Tombol Delete-->
+        <div id="delete-modal" class="modal">
+            <div class="modal-content"></div>
+            <h2>Konfirmasi</h2>
+            <p>Apakah anda yakin ingin menghapus pengeluaran ini?</p>
+            <button class="confirm-btn" id="confirm-delete">Hapus</button>
+            <button class="cancel-btn" onclick="closeModal('delete-modal')">Cancel</button>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
