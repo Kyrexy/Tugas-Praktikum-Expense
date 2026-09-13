@@ -1,22 +1,33 @@
-# Tugas-Praktikum-Expense
-Tugas Praktikum Front-End membuat tracker pengeluaran
+# Tugas Praktikum - Expense Tracker
 
-Fitur
--Menambahkan data pengeluaran
--Menampilkan semua data pengeluaran yang telah ditambahkan
--Menampilkan total seluruh pengeluaran 
--Menghapus data pengeluaran dengan konfirmasi
+Tugas Praktikum Front-End membuat website untuk mengelola pengeluaran
+ * `Louis Vebryanto - 535250142`
 
-Struktur
--index.html:tampilan webpagenya sendiri
--style.css:styling dari website berupa warna,font,etc
--script.js:logika dari website ini
+## Fitur
 
-Cara menggunakan
--Run index.html
+* Menambahkan data pengeluaran
+* Menampilkan seluruh data pengeluaran yang telah ditambahkan
+* Menampilkan total seluruh pengeluaran
+* Mengedit data pengeluaran
+* Menghapus data pengeluaran dengan konfirmasi
+* Menyimpan data pengeluaran secara lokal
 
--Apabila ada pengeluaran yang ingin di data isi semua field berupa nama pengeluaran, nominal, kategori pengeluaran, serta tanggal lalu klik tombol add Expense
+## Struktur Project
 
--Setelah tombol add Expense di-klik maka pengeluaran akan disimpan secara local
+* index.html — Berisi struktur dan tampilan utama website.
+* style.css — Berisi styling website, seperti warna, font, layout, dan tampilan lainnya.
+* script.js — Berisi logika dan fungsi-fungsi yang digunakan pada website.
 
--Pengeluaran tersebut dapat diedit untuk nominalnya dan namanya dengan tombol edit lalu dapat dihapus juga dengan tombol delete
+## Cara Menggunakan
+
+1. Run file index.html
+2. Untuk menambahkan pengeluaran, isi seluruh field yang tersedia:
+   * Nama pengeluaran
+   * Nominal pengeluaran
+   * Kategori pengeluaran
+   * Tanggal pengeluaran
+3. Setelah seluruh field terisi, klik tombol **Add Expense**
+4. Data pengeluaran yang ditambahkan akan disimpan secara lokal dan ditampilkan pada tabel pengeluaran
+5. Data pengeluaran dapat diubah dengan menekan tombol **Edit**
+6. Data pengeluaran juga dapat dihapus dengan menekan tombol **Delete**. Konfirmasi penghapusan akan muncul sebelum data benar-benar dihapus
+
